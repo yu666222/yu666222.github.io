@@ -1,43 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://kit.fontawesome.com/f4392ee6e2.js" crossorigin="anonymous"></script>
         <meta charset="UF-8"/>
         <title>Home</title>
         <link rel="stylesheet" href="search.css"/>
     </head>
     <body>
-        <img src="1111.png" class="logo">
+        <img src="111.png" class="logo">
         <div style="opacity:0.75" class="container">
             <form action="" class="parent">
                 <input type="text" class="search" placeholder="Search...">
-                <input type="button" name="" id="" class="btn">
             </form>
-        </div>
-        <div>
-            <a href="setting.html" style="color: LightGreen;" class="shape-ex11"><p><b>Setting</b></p>
-                <style>
-                    a{text-decoration:none}
-                    a:hover{text-decoration:none}
-                </style>
-            </a>
-        </div>
-        <div>
-            <a href="info.html" style="color: LightGreen;" class="shape-ex11"><p><b>Personal Information</b></p>
-                <style>
-                    a{text-decoration:none}
-                    a:hover{text-decoration:none}
-                </style>
-            </a>
-        </div>
-        <!--
-        <style>   
-            body {
-                background-image: url(background.jpg);
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-position: center;
-                background-size: cover;
-            }
-        </style>
-        -->
+        <a href="info.html"><img src="info.png" class="info"></a> 
+        <a href="setting.html"><img src="setting.png" class="setting"></a>
+        <br/>
+        <br/>
+        <label class="btn btn-info">
+            <form action="" enctype="multipart/form-data">
+
+                <input id="file" class="filepath" onchange="changepic(this)" type="file"><br>
+            
+                <img src="" id="show" width="200">
+            
+            </form>
+            
+            <script>
+            
+                function changepic() {
+            
+                    var reads= new FileReader();
+            
+                    f=document.getElementById('file').files[0];
+            
+                    reads.readAsDataURL(f);
+            
+                    reads.onload=function (e) {
+            
+                        document.getElementById('show').src=this.result;
+            
+                    };
+            
+                }
+            
+            </script>
+        </label>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPhotos</b>
+        <hr/>
+
     </body>
