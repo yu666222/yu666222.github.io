@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UF-8"/>
+        <title>Create a Account</title>
+    </head>
+    <body>
+        <style>
+            html {
+                height: 100%;
+            }
+            body {
+                background-image: url(background2.jpeg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+        </style>
+        <div style="opacity:0.75 ; border-width: 8px ; width: 500px; height: 350px ; padding: 10px; text-align: center; background-color: MintCream;border-radius: 4px; border-radius:10px;">
+            <style>
+                body{position: absolute;
+                top: 17%;
+                left: 29%;}
+            </style>
+            <span style="color: Grey;">
+                <h1 style="font-family:Arial;">Create Your Account</h1>   
+                <br/>
+                <input type="text" placeholder="Usename"/>
+                <br/>
+                <br/>
+                <br/>       
+                <input type="text" placeholder="Account"/>
+                <p style="font-size:85%;">Account needs to be at least 6 characters.</p>
+                <input type="password" placeholder="Password"/>
+                <p style="font-size:85%;">Password needs to be at least 5 characters.</p>
+                <a href="index.html" style="color:LightSkyBlue;">Sign In</a>
+                <br/>
+                <br/>
+                <input type="submit" value="Create" onclick="pop()"/>
+                <script> 
+                    function pop() { 
+                    alert("Registration Successful"); 
+                    } 
+                    </script> 
+            </span>
+        </div>
+    </body>
